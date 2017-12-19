@@ -66,8 +66,8 @@ def inserturl(db, cur, listurl):
 
 def dbconnect():
 	db = MySQLdb.connect(host="localhost",
-        	user="root",
-        	passwd="yq560m0wls",
+        	user="USERNAME_HERE",
+        	passwd="PASSWORD_HERE",
         	db="httptable")
 
 	cur = db.cursor()
