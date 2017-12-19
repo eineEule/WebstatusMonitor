@@ -60,8 +60,11 @@ def getdata():
         return listurl
 
 def inserturl(db, cur, listurl):
-	cur.execute("insert into urllist(url) values('{0}')".format(listurl))
-       	db.commit()
+	if listurl == None:
+		pass
+	else:
+		cur.execute("insert into urllist(url) values('{0}')".format(listurl))
+       		db.commit()
 
 def dbconnect():
 	db = MySQLdb.connect(host="localhost",
