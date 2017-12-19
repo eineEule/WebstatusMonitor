@@ -57,7 +57,6 @@ def htmlform():
 def getdata():
         formData = cgi.FieldStorage()
         listurl = formData.getvalue('listurl')
-	listurl = filter(None, listurl)
         return listurl
 
 def inserturl(db, cur, listurl):
