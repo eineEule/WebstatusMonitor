@@ -10,3 +10,4 @@ Users will need to install and configure Python and MySQL server. Users will als
   fucnt.py
   
   Replace HOST, USERNAME, PASSWORD, DATABASE, TABLE, and COLOUMN with the appropriate entries.
+ Add backend.py to crontab
